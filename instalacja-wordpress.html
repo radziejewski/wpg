@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Dowiedz się, jak krok po kroku zainstalować WordPress na własnym serwerze. Poradnik obejmuje ręczną instalację, korzystanie z FTP, konfigurację bazy danych oraz automatyczne instalatory WordPressa. Praktyczne wskazówki dla początkujących użytkowników." />
+        <meta name="keywords" content="jak zainstalować WordPress, instalacja WordPress, WordPress na serwerze" />
+        <meta name="author" content="Łukasz Radziejewski">
+        <meta name="robots" content="index,follow">
+        
+        <title>Jak zainstalować WordPressa? - WP-Genius - Kurs WordPress z asystentem GPT</title>
+        
+        <!-- FAV and TOUCH ICONS -->
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png"/>
+        
+        <!-- FONTS -->
+        <link rel="stylesheet" type="text/css" href="css/fonts/hk-grotesk/style.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css">
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <!-- CANONICAL LINK -->
+        <link rel="canonical" href="https://radziejewski.github.io/wpg/instalacja-wordpress/">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="Jak zainstalować i zacząć korzystać WordPressa?">
+        <meta property="og:site_name" content="WP-Genius">
+        <meta property="og:url" content="https://radziejewski.github.io/wpg/instalacja-wordpress/">
+        <meta property="og:description" content="Dowiedz się, jak krok po kroku zainstalować WordPress na własnym serwerze. Poradnik obejmuje ręczną instalację, korzystanie z FTP, konfigurację bazy danych oraz automatyczne instalatory WordPressa. Praktyczne wskazówki dla początkujących użytkowników.">
+        <meta property="og:type" content="article">
+        <meta property="og:image" content="https://radziejewski.github.io/wpg/images/og/wpg.jpg">
+        
+        <!-- Google tag (gtag.js) -->
+        
+        
+    </head>
+
+    <body>
+        <!-- CONTENT-WRAP -->
+        <div class="content-wrap">
+            <!-- CONTENT -->
+            <div class="content">
+                <!-- TITLE -->
+                <h1>
+                    Jak zainstalować WordPressa?
+                </h1>
+                <!-- TITLE -->
+
+                <h4>Lekcja 2 <span class="highlight yellow">wersja 1.0</span></h4>
+
+                <h2>Wprowadzenie</h2>
+                <p>WordPress to jedno z najpopularniejszych narzędzi do tworzenia stron internetowych. Jego instalacja jest stosunkowo prosta, ale dla osób, które robią to po raz pierwszy, może wydawać się skomplikowana. W tym artykule wyjaśniam krok po kroku, jak zainstalować WordPress na własnym serwerze.</p>
+
+                <h2>Co jest potrzebne do instalacji WordPressa?</h2>
+                <p>Aby zainstalować WordPress, potrzebujesz kilku podstawowych rzeczy:</p>
+                <ul>
+                    <li><strong>Hosting:</strong> Usługa, która pozwala przechowywać pliki Twojej strony internetowej i udostępniać je w internecie. Warto wybrać hosting dostosowany do WordPressa.</li>
+                    <li><strong>Domena:</strong> Unikalny adres internetowy Twojej strony (np. twojafirma.pl).</li>
+                    <li><strong>Oprogramowanie FTP:</strong> Narzędzie do przesyłania plików na serwer. Popularnym programem FTP jest FileZilla.</li>
+                    <li><strong>Baza danych:</strong> Miejsce, w którym przechowywane są wszystkie dane Twojej strony, takie jak treści, ustawienia i użytkownicy.</li>
+                </ul>
+
+                <h2>Podstawowe pojęcia</h2>
+                <p>Zanim przejdziemy do szczegółów instalacji, warto zrozumieć kilka podstawowych pojęć:</p>
+                <ul>
+                    <li><strong>FTP (File Transfer Protocol):</strong> Protokół do przesyłania plików między komputerem a serwerem. Używa się go do przesyłania plików WordPressa na serwer.</li>
+                    <li><strong>Baza danych:</strong> Zbiór danych przechowywanych w zorganizowany sposób. WordPress korzysta z bazy danych MySQL do przechowywania treści strony, ustawień i informacji o użytkownikach.</li>
+                </ul>
+
+                <h2>Etapy instalacji WordPressa</h2>
+                <h3>Krok 1: Pobranie WordPressa</h3>
+                <p>Najpierw musisz pobrać najnowszą wersję WordPressa ze strony WordPress.org. Po pobraniu pliku .zip, rozpakuj go na swoim komputerze.</p>
+
+                <h3>Krok 2: Utworzenie bazy danych</h3>
+                <p>Na swoim hostingu musisz utworzyć bazę danych dla WordPressa. W panelu sterowania hostingu znajdź sekcję "Bazy danych" i utwórz nową bazę danych. Zanotuj nazwę bazy danych, nazwę użytkownika, hasło i adres serwera bazy danych (zazwyczaj "localhost").</p>
+
+                <h3>Krok 3: Przesyłanie plików WordPressa</h3>
+                <p>Używając programu FTP (np. FileZilla), połącz się ze swoim serwerem. Prześlij wszystkie pliki WordPressa z komputera na serwer do katalogu, w którym ma być zainstalowana strona (zazwyczaj katalog główny domeny).</p>
+
+                <h3>Krok 4: Konfiguracja WordPressa</h3>
+                <p>Po przesłaniu plików, otwórz przeglądarkę internetową i wejdź na swoją domenę. Powinien pojawić się ekran konfiguracji WordPressa. Wprowadź dane bazy danych, które zanotowałeś wcześniej (nazwa bazy danych, nazwa użytkownika, hasło, adres serwera bazy danych).</p>
+
+                <h3>Krok 5: Instalacja WordPressa</h3>
+                <p>Po wprowadzeniu danych bazy danych, kliknij "Prześlij" i WordPress przetestuje połączenie z bazą danych. Jeśli wszystko jest poprawnie skonfigurowane, kliknij "Uruchom instalację". Następnie wprowadź podstawowe informacje o stronie (tytuł strony, nazwa użytkownika, hasło, e-mail administratora) i kliknij "Zainstaluj WordPress".</p>
+
+                <h3>Krok 6: Logowanie do panelu administracyjnego</h3>
+                <p>Po zakończeniu instalacji, możesz zalogować się do panelu administracyjnego WordPressa, wchodząc na swoją domenę i dodając "/wp-admin" (np. twojafirma.pl/wp-admin). Wprowadź nazwę użytkownika i hasło, które utworzyłeś podczas instalacji.</p>
+
+                <h2>Automatyczny instalator WordPressa</h2>
+                <p>Wielu dostawców hostingu oferuje automatyczny instalator WordPressa, który znacznie upraszcza cały proces instalacji. Dzięki niemu nie musisz ręcznie pobierać plików, tworzyć bazy danych ani konfigurować połączenia FTP. W panelu sterowania hostingu znajdź sekcję "Automatyczny instalator" lub "One-Click Install", wybierz WordPressa, wprowadź podstawowe dane i kliknij "Zainstaluj". Proces ten trwa zazwyczaj kilka chwil.</p>
+
+                <h2>Wsparcie techniczne</h2>
+                <p>Jeśli nie czujesz się na siłach, aby samodzielnie zainstalować WordPressa, warto skontaktować się z supportem swojego hostingu. Większość dostawców oferuje pomoc w instalacji WordPressa i chętnie odpowie na Twoje pytania oraz poprowadzi Cię przez cały proces.</p>
+
+                <h2>Podsumowanie</h2>
+                <p>Instalacja WordPressa jest stosunkowo prosta, zwłaszcza jeśli korzystasz z automatycznego instalatora oferowanego przez większość dostawców hostingu. Proces składa się z kilku kroków: pobrania WordPressa, utworzenia bazy danych, przesłania plików na serwer, konfiguracji i instalacji. Dla osób, które nie czują się pewnie w kwestiach technicznych, zawsze dostępne jest wsparcie techniczne hostingu.</p>
+
+                <h2>Co dalej? 🤔</h2>
+                <p>Gratulacje! Skoro udało Ci się zainstalować WordPressa, możesz z dumą powiedzieć, że masz już podstawy opanowane 🎉</p>
+
+                <p>Teraz poświęć chwilę na spokojne zapoznanie się z panelem administracyjnym WordPressa. Kliknij wszystkie opcje menu po lewej stronie – od "Wpisy" po "Ustawienia". Nie bój się eksplorować – nic nie popsujesz, a dzięki temu szybciej poczujesz się pewnie.</p>
+
+                <p>Kiedy już zorientujesz się, co gdzie się znajduje, skorzystaj z <strong>inteligentnego asystenta WP-Genius</strong>, który poprowadzi Cię przez kolejne kroki:</p>
+
+                <p><a class="button aqua" href="https://chatgpt.com/g/g-68383bf4dacc81919df063ad574e2837-wp-genius" target="_blank"><i class="icon-wordpress"></i> Uruchom WP-Genius</a></p>
+
+                <p>Na początek możesz zapytać na przykład:</p>
+                <ul>
+                    <li>„Jak dodać swoją pierwszą stronę?”</li>
+                    <li>„Który motyw będzie dobry do strony firmowej?”</li>
+                    <li>„Jak dodać logo i zmienić kolory strony?”</li>
+                </ul>
+
+                <p>Jeśli jednak w którymkolwiek momencie utkniesz, nie zrażaj się – <strong>skontaktuj się ze mną</strong>. Chętnie odpowiem na Twoje pytania lub pomogę przejść przez trudniejsze fragmenty. Czekam także na Twoje <strong>opinie i sugestie</strong> dotyczące lekcji oraz FAQ – dzięki nim mogę rozwijać ten kurs i tworzyć jeszcze lepsze materiały.</p>
+
+                <p>Najlepiej napisz do mnie przez profil na <a class="link-1 aqua" href="https://www.linkedin.com/in/radziejewskil/" target="_blank" rel="nofollow">LinkedIn</a>.</p>
+
+                <p>Powodzenia i do zobaczenia w kolejnych krokach! 🚀</p>
+
+                <br>
+
+                <h4>WP-Genius <span class="highlight yellow">Menu</span></h4>
+
+                <p><a class="link-2 grey" href="index.html">Powrót do strony głównej</a></p>
+
+            </div>
+            <!-- CONTENT -->
+        </div>
+        <!-- CONTENT-WRAP -->
+
+        <!-- SCRIPTS -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
